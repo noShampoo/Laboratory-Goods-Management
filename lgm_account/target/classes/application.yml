@@ -1,0 +1,17 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: lgm-com.lgm.account
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://39.101.211.49:53423/goodsmanage_account?useSSL=true&&characterEncoding=UTF8
+    url: jdbc:mysql://39.101.211.49:53423/goodsmanage_account?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+  redis:
+    host: 39.101.211.49
+    port: 47143
+    password: 123456
+mybatis:
+  type-aliases-package: com.lgm.com.lgm.account.dao
